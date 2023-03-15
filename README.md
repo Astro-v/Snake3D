@@ -30,4 +30,4 @@ The game is design as a 3D snake. The snake can move in a _\_SIZE_GRID\__ $\time
 
 ### Constants
 
-- ***SIZE_GRID*** : 
+- ***\_SIZE_GRID\_*** : 
