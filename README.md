@@ -22,7 +22,7 @@ Parametters
 
 ### Graphic design
 
-Contrary to what one might think, _Snake3D_ is a 2D game. It is develop in _C++_ using the _SFML_ library to handle all the graphic purpose.
+Contrary to what one might think, _Snake3D_ is a 2D game. It is develop in _C++_ using the _SFML_ library to handle all the graphics purposes.
 
 The game is design as a 3D snake. The snake can move in a _\_SIZE_GRID\__ $\times$ _\_SIZE_GRID\__ $\times$ _\_SIZE_GRID\__ grid.
 
