@@ -30,4 +30,7 @@ The game is design as a 3D snake. The snake can move in a _\_SIZE_GRID\__ $\time
 
 ### Constants
 
-- ***\_SIZE_GRID\_*** : 
+- ***\_SIZE_GRID\_*** : Size of the grid (number of tiles in a raw).
+value = _10_
+- ***\_NBR_APPLE_\_*** : Number of apple that will be appear until the end of the game.
+value = _30_ 
