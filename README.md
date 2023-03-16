@@ -3,7 +3,7 @@
 ## Summary
 
 Tools
-- [C++20 language](#language)
+- [language](#language)
 - [SFML](#sfml)
 
 Overview of the gameplay
@@ -17,7 +17,7 @@ Code structure
 
 ## Tools
 
-### C++20 language
+### Language
 
 ### SFML
 
