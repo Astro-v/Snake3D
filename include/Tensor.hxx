@@ -4,6 +4,8 @@
 
 // INCLUDES STD
 #include <memory>
+#include <iostream>
+#include <initializer_list>
 
 // INCLUDES SFML
 
@@ -33,26 +35,33 @@ public:
     /**
      * @brief Const accessor for the element (i, j, k).
      * 
-     * @param i First index.
-     * @param j Second index.
-     * @param k Third index.
+     * @param index Initializer_list of indexes.
      * 
      * @return Return a constant reference over the (i, j, k)th element.
      *
      */
-    const T& operator()(size_t i, size_t j, size_t k) const { return _data[i + _size * (j + size * k)];}
+    const T& operator()(const std::initializer_list<size_t>& index) const;
 
     /**
      * @brief Non-const accessor for the element (i, j, k).
      * 
-     * @param i First index.
-     * @param j Second index.
-     * @param k Third index.
+     * @param index Initializer_list of indexes
      * 
      * @return Return a reference over the (i, j, k)th element.
      *
      */
-    T& operator()(size_t i, size_t j, size_t k) { return _data[i + _size * (j + size * k)];}
+    T& operator()(const std::initializer_list<size_t>& index);
+
+    /**
+     * @brief Overload of the output stream operator.
+     * 
+     * @param stream Output stream references.
+     * @param t Tensor.
+     * 
+     * @return Return a reference over the input stream.
+     *
+     */
+    friend std::ostream& operator<< (std::ostream& stream, const Tensor<T, dim>& t);
 
 private:
     size_t _size {dim};
@@ -60,5 +69,7 @@ private:
     std::unique_ptr<T[]> _data {new T[dim * dim * dim]};
     //std::unique_ptr<T[]> _data {std::make_unique<T[]>(dim * dim * dim)};
 };
+
+
 
 #endif // __TENSOR_HXX__

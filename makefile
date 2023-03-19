@@ -24,10 +24,18 @@ HEADER 		  = include/*.hxx
 
 all : $(DIR_EXEC)$(EXEC)
 
+test_tensor : tests/tensor/test.exe
+
+tests/tensor/test.exe : out/obj/Tensor.o out/obj/tests/MainTestTensor.o
+	$(CXX) -o $@ $^ $(LIB) $(LDFLAGS) 
+
 $(DIR_EXEC)$(EXEC) : $(DIR_OBJS)
 	$(CXX) -o $@ $^ $(LIB) $(LDFLAGS) 
 
 $(DIR_OBJ)%.o : $(DIR_SRC)%.cxx $(HEADER)
+	$(CXX) -o $@ -c $< $(INCLUDE) $(CXXFLAGS)
+
+out/obj/tests/MainTestTensor.o : tests/tensor/MainTestTensor.cxx $(HEADER)
 	$(CXX) -o $@ -c $< $(INCLUDE) $(CXXFLAGS)
 
 
