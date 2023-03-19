@@ -4,8 +4,13 @@
  * DATE OF CREATION : 19 / 03 / 2023
  */
 
-// INCLUDES
+// INCLUDES STD
 #include <iostream>
+
+// INCLUDES SFML
+
+// INCLUDES
+#include "Constant.hxx"
 
 int main()
 {
