@@ -59,3 +59,8 @@ value = _30_
 - ***\_FREQ_MIN\_*** : Minimal frequence (speed - tiles per second) of the snake
 - ***\_FREQ_MAX\_*** : Maximal frequence (speed - tiles per second) of the snake
 - ***\_FREQ_INI\_*** : Initial frequence (speed - tiles per second) of the snake
+- ***\_SIZE_SQUARE\_*** : Size of a square in the grid in pixel.
+value = _30_
+- ***\_SIZE_PADDING\_*** : Size of a square in the grid in pixel.
+value = _30_
+
