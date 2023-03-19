@@ -59,8 +59,12 @@ value = _30_
 - ***\_FREQ_MIN\_*** : Minimal frequence (speed - tiles per second) of the snake
 - ***\_FREQ_MAX\_*** : Maximal frequence (speed - tiles per second) of the snake
 - ***\_FREQ_INI\_*** : Initial frequence (speed - tiles per second) of the snake
+- ***\_SIZE_SPRITE\_*** : Size of a snake sprite in the grid in pixel.
+value = _30_
+- ***\_SIZE_PADDING\_*** : Size of a padding border around the square in pixel.
+value = _1_
 - ***\_SIZE_SQUARE\_*** : Size of a square in the grid in pixel.
-value = _30_
-- ***\_SIZE_PADDING\_*** : Size of a square in the grid in pixel.
-value = _30_
+value = _32_ = \_SIZE_SPRITE\_ + 2 * \_SIZE_SQUARE\_
+- ***\_SIZE_SPACE\_*** : Size of the spaces between the screen in pixel.
+value = _32_
 
