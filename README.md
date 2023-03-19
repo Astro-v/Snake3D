@@ -37,13 +37,15 @@ The game is design as a 3D snake. The snake can move in a _\_SIZE_GRID\__ $\time
 
 #### Headers
 
-- **Snake.hpp** : File that contain all the game feature (not the display part). It contain 
-- **constant.hpp** : File that contain all the definition of the constants of the game.
+- **Snake.hpp** : File that contain all the game feature (not the display part).
+- **Constant.hpp** : File that contain all the definition of the constants of the game.
+- **Display.hpp** : 
 
 #### Sources
 
 - **MainSnake.cpp** : Main file that contain the main function. There is a method called LaunchGame that allocate the memory for the Snake class and pass this pointer to the Display class. It also generate two independant threads and the mutex. One thread corespond to the Display part and the other thread correspond to the Snake part.
-- **Snake.hpp** : File that contain all the game feature (not the display part)
+- **Snake.cpp** : File that contain all the game feature (not the display part).
+- **Display.cpp** : 
 
 ### Classes
 
