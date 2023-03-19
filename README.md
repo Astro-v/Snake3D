@@ -17,6 +17,11 @@ Code structure
 
 ## Tools
 
+### Compilation
+
+To compile the porject one should just use the makefile file. All the compilation instructions are put in it. 
+On windows devices, one have to use the command "mingw32-make" to compile. Use the "mingw32-make clean" to remove the object files and use "mingw32-make mrproper" to also remove the executable file.
+
 ### Language
 
 ### SFML
@@ -64,7 +69,7 @@ value = _30_
 - ***\_SIZE_PADDING\_*** : Size of a padding border around the square in pixel.
 value = _1_
 - ***\_SIZE_SQUARE\_*** : Size of a square in the grid in pixel.
-value = _32_ = \_SIZE_SPRITE\_ + 2 * \_SIZE_SQUARE\_
+value = _32_ = \_SIZE_SPRITE\_ + 2 * \_SIZE_PADDING\_
 - ***\_SIZE_SPACE\_*** : Size of the spaces between the screen in pixel.
 value = _32_
 
