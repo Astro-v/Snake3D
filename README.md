@@ -17,6 +17,11 @@ Code structure
 
 ## Tools
 
+### Compilation
+
+To compile the porject one should just use the makefile file. All the compilation instructions are put in it. 
+On windows devices, one have to use the command "mingw32-make" to compile. Use the "mingw32-make clean" to remove the object files and use "mingw32-make mrproper" to also remove the executable file.
+
 ### Language
 
 ### SFML
@@ -37,15 +42,15 @@ The game is design as a 3D snake. The snake can move in a _\_SIZE_GRID\__ $\time
 
 #### Headers
 
-- **Snake.hpp** : File that contain all the game feature (not the display part).
-- **Constant.hpp** : File that contain all the definition of the constants of the game.
-- **Display.hpp** : 
+- **Snake.hxx** : File that contain all the game feature (not the display part).
+- **Constant.hxx** : File that contain all the definition of the constants of the game.
+- **Display.hxx** : 
 
 #### Sources
 
-- **MainSnake.cpp** : Main file that contain the main function. There is a method called LaunchGame that allocate the memory for the Snake class and pass this pointer to the Display class. It also generate two independant threads and the mutex. One thread corespond to the Display part and the other thread correspond to the Snake part.
-- **Snake.cpp** : File that contain all the game feature (not the display part).
-- **Display.cpp** : 
+- **MainSnake.cxx** : Main file that contain the main function. There is a method called LaunchGame that allocate the memory for the Snake class and pass this pointer to the Display class. It also generate two independant threads and the mutex. One thread corespond to the Display part and the other thread correspond to the Snake part.
+- **Snake.cxx** : File that contain all the game feature (not the display part).
+- **Display.cxx** : 
 
 ### Classes
 
@@ -64,7 +69,7 @@ value = _30_
 - ***\_SIZE_PADDING\_*** : Size of a padding border around the square in pixel.
 value = _1_
 - ***\_SIZE_SQUARE\_*** : Size of a square in the grid in pixel.
-value = _32_ = \_SIZE_SPRITE\_ + 2 * \_SIZE_SQUARE\_
+value = _32_ = \_SIZE_SPRITE\_ + 2 * \_SIZE_PADDING\_
 - ***\_SIZE_SPACE\_*** : Size of the spaces between the screen in pixel.
 value = _32_
 
