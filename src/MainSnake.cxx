@@ -14,6 +14,7 @@
 
 int main()
 {
-    
+    std::cout << __cplusplus << std::endl;
+    system("PAUSE");
     return 0;
 }
