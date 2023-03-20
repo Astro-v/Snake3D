@@ -12,8 +12,11 @@
 // INCLUDES
 #include "Constant.hxx"
 
-int main()
-{
-    
-    return 0;
+int main() {
+  int a;  // comment
+  int ab; // comment
+
+  int abc;// comment
+  int abcd; // comment
+  return 0;
 }
